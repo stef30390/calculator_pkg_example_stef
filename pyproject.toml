@@ -1,0 +1,6 @@
+[build-system]
+requires =["setuptools"]
+build-backend = "setuptools.build_meta"
+
+name = "calculator_pkg_example_stef"
+version = "0.1.0"
