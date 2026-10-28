@@ -1,4 +1,6 @@
 from calculator_pkg_example_stef.calculator import Calculator
+
+
 def main() -> None:
     print(Calculator().add(1,2))
 

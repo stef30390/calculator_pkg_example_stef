@@ -1,5 +1,7 @@
-from calculator_pkg_example_stef.calculator import Calculator
 import unittest
+
+from calculator_pkg_example_stef.calculator import Calculator
+
 class TestCalculator:
     def test_add (self):
         assert Calculator().add(1,2) == 3, "Add failed!"

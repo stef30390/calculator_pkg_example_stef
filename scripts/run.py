@@ -1,2 +1,4 @@
 from calculator_pkg_example_stef.calculator import Calculator
-print (Calculator().add(2, 3))
+from calculator_pkg_example_stef.file_calculator.file_calculator import FileCalculator
+
+print (FileCalculator().add_file())
