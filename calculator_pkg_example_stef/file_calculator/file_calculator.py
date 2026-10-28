@@ -2,15 +2,15 @@ from ..calculator import Calculator
 from pathlib import Path
 
 class FileCalculator(Calculator):
-    def __init__(self, path =Path(__file__).parent / "num.csv"):
-        self.path = path
-    def add_file(self):
-        total = None
+    def __init__(self, path: Path =Path(__file__).parent / "nums.csv") -> None:
+        self.path:Path = path
+    def add_file(self) -> int |None:
+        total:int |None = None
         with open(self.path) as f:
             for line in f:
                 if total is None:
-                    total=line
+                    total = int(line)
                     continue
                 else:
-                    total += line
+                    total += int(line)
         return total
