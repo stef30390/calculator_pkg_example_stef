@@ -1,0 +1,7 @@
+include README.md
+include LICENSE.txt
+global-include **.typed
+global-include **.pypi
+include tox.ini
+
+exclude scripts/**
